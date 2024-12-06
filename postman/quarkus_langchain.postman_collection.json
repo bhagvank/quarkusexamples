@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "c8a759dd-3652-4ae7-b81a-fe6ddd22d57e",
+		"name": "quarkus_langchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4904193",
+		"_collection_link": "https://winter-spaceship-825022.postman.co/workspace/LLM~3d2d6e34-bbb8-4633-bdb2-2f989905cd10/collection/4904193-c8a759dd-3652-4ae7-b81a-fe6ddd22d57e?action=share&source=collection_link&creator=4904193"
+	},
+	"item": [
+		{
+			"name": "ChatQuery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat?q=Does%20quarkus%20support%20redis%3Fn",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Does%20quarkus%20support%20redis%3Fn"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location --request POST 'http://localhost:8080/chat?q=Does%20quarkus%20support%20redis%3F'\\n"
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Previous Query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat?q=What%20was%20my%20last%20Quarkus%20question%3F&id=d3414b32-454e-4577-af81-8fb7460f13cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "What%20was%20my%20last%20Quarkus%20question%3F"
+						},
+						{
+							"key": "id",
+							"value": "d3414b32-454e-4577-af81-8fb7460f13cd"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location --request POST 'http://localhost:8080/chat?q=What%20was%20my%20last%20Quarkus%20question%3F&id=d3414b32-454e-4577-af81-8fb7460f13cd'"
+			},
+			"response": []
+		}
+	]
+}
